@@ -4,8 +4,32 @@
     Welcome to {{ title }}!
   </h1>
   <div>
-    <app-child [parentData]="initialDataToChild"></app-child>
+    <app-child [parentData]="parentData"></app-child>
   </div>
   <button type="button" class="btn btn-success" (click)="sendMessage()">Success</button>
   <button type="button" class="btn btn-success" (click)="sendMessageToChild()">Child Changes</button>
+</div>
+
+<!-- <figure class="imghvr-flip-horiz">
+  <img src="home/sony/Desktop/image.jpeg">
+  <figcaption>
+
+  </figcaption>
+</figure> -->
+<!-- <div class="col-md-6">
+  <div class="card">herer</div>
+</div>
+<div class="col-md-6">
+  <div class="card second">second</div>
+</div> -->
+
+<div class="flip-container" (click)="add()">
+  <div class="card" id="foo">
+      <div class="front">
+          <!-- front side content -->
+      </div>
+      <div class="back">
+          <!-- back side content -->
+      </div>
+  </div>
 </div>
